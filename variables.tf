@@ -20,6 +20,7 @@ variable "ssh_key_name" {
 #    condition = can(regex("^[a-z]+(-[a-z0-9]+)*$|^$", var.ssh_key_name))
 #    error_message = "Our automation code supports only one ssh key to be attached to the application node."
 #  }
+   default = ""
 }
 
 variable "resource_group_name" {
