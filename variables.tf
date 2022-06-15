@@ -25,7 +25,7 @@ variable "ssh_key_name" {
 
 variable "resource_group_name" {
   type        = string
-  default     = "default"
+  default     = "Default"
   description = "Resource group name from your IBM Cloud account where the VPC resources should be deployed. For more information, see[Managing resource groups](https://cloud.ibm.com/docs/account?topic=account-rgs&interface=ui)."
 }
 
