@@ -1,18 +1,7 @@
-variable "TF_PARALLELISM" {
-  type        = string
-  default     = "250"
-  description = "Limit the number of concurrent operation."
-}
 
-variable "TF_VERSION" {
-  type        = string
-  default     = "1.0"
-  description = "The version of the Terraform engine that's used in the Schematics workspace."
-}
-
-variable "ibmcloud_api_key" {
-  description = "Enter your IBM Cloud API Key"
-}
+#variable "ibmcloud_api_key" {
+#  description = "Enter your IBM Cloud API Key"
+#}
 
 variable "resource_prefix" {
   type        = string
