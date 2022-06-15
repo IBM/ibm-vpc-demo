@@ -16,10 +16,10 @@ variable "resource_prefix" {
 variable "ssh_key_name" {
   type        = string
   description = "Name of the SSH key configured in your IBM Cloud account that is used to establish a connection to the application nodes. Ensure that the SSH key is present in the same resource group and region where the cluster is being provisioned and our automation supports only one ssh key that can be attached to the application nodes. If you do not have an SSH key in your IBM Cloud account, create one by using the [SSH keys](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys) instructions. If left blank then a key will be generated."
-  validation {
+#  validation {
 #    condition = can(regex("^[a-z]+(-[a-z0-9]+)*$|^$", var.ssh_key_name))
-    error_message = "Our automation code supports only one ssh key to be attached to the application node."
-  }
+#    error_message = "Our automation code supports only one ssh key to be attached to the application node."
+#  }
 }
 
 variable "resource_group_name" {
